@@ -1,0 +1,100 @@
+.contact-cta {
+  text-align: center;
+  border: 0.5px solid #eaeaea;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 500px;
+}
+
+.cta-title {
+  font-size: clamp(1.8rem, 5vw, 2.5rem); /* Responsive font size */
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.cta-buttons {
+  display: flex;
+  flex-wrap: wrap; /* Allow buttons to wrap on small screens */
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background: transparent;
+  border: 2px solid #333;
+  color: #ffff;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 4px;
+  min-width: 120px; /* Minimum button width */
+}
+
+.cta-filled{
+    background-color: #eaeaea;
+    color: black;
+}
+
+.cta-outline{
+    border: 0.5px solid #eaeaea;
+}
+
+/* .cta-button:hover {
+  background: #333;
+  color: white;
+} */
+
+.divider {
+  height: 1px;
+  background: #eaeaea;
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.footer {
+  font-size: clamp(0.75rem, 3vw, 0.875rem); /* Responsive font size */
+  color: #666;
+}
+
+.initials {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.copyright {
+  line-height: 1.5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact-cta {
+    padding: 1.5rem;
+  }
+  
+  .cta-buttons {
+    flex-direction: column; /* Stack buttons vertically on small screens */
+    align-items: center;
+  }
+  
+  .cta-button {
+    width: 100%; /* Full width buttons on mobile */
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-cta {
+    padding: 1rem;
+  }
+  
+  .cta-title {
+    margin-bottom: 1.5rem;
+  }
+}
