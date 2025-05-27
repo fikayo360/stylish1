@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import './SelectedWork.css';
+import './selectedWork.css';
 
 const works = [
   { id: 1, src: 'https://framerusercontent.com/images/YSg6uvX9YHoJRk2otE3K0PkRVBE.jpg?scale-down-to=2048', alt: 'Work 1' },
