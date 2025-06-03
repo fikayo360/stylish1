@@ -61,8 +61,8 @@ const Hero = () => {
         </div>
         <nav className={isNavActive ? 'active' : ''}>
           <ul>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Process</a></li>
+            <li><a href="#">home</a></li>
+            <li><a href="#">SelectedWorks</a></li>
             <li><a href="#">Testimonials</a></li>
             <li><a href="#">About</a></li>
           </ul>
