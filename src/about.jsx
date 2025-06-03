@@ -6,14 +6,14 @@ import './about.css';
 const About = () => {
  const textControls = useAnimation();
   const [textRef, textInView] = useInView({
-    triggerOnce:false,
+    triggerOnce:true,
     threshold: 0.2,
   });
 
   // Controls for image
   const imageControls = useAnimation();
   const [imageRef, imageInView] = useInView({
-    triggerOnce: false,
+    triggerOnce: true,
     threshold: 0.2,
   });
 
@@ -28,12 +28,12 @@ const About = () => {
   }, [textControls, textInView, imageControls, imageInView]);
 
   const textVariants = {
-    hidden: { opacity: 0, x: -50 },
+    hidden: { opacity: 0, x: -30 },
     visible: {
       opacity: 1,
       x: 0,
       transition: {
-        duration: 0.8,
+        duration: 0.6,
         ease: "easeOut",
         staggerChildren: 0.2,
       }
@@ -50,7 +50,7 @@ const About = () => {
   };
 
   const imageVariants = {
-    hidden: { opacity: 0, x: 50 },
+    hidden: { opacity: 0, x: 30 },
     visible: {
       opacity: 1,
       x: 0,

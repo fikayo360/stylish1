@@ -78,6 +78,9 @@
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
+  .testimonial-card {
+  width: 90%;
+}
   .testimonials-section {
     padding: 3rem 1rem;
   }
@@ -89,6 +92,7 @@
   
   .testimonials-grid {
     grid-template-columns: 1fr;
+    place-items:center ;
   }
 }
 

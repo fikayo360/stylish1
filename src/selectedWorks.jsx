@@ -15,7 +15,7 @@ const works = [
 
 const MotionItem = ({ src, alt, delay = 0 }) => {
   const controls = useAnimation();
-  const [ref, inView] = useInView({ triggerOnce: true });
+  const [ref, inView] = useInView({ triggerOnce: true,threshold: 0.2 });
 
   React.useEffect(() => {
     if (inView) {
@@ -31,7 +31,7 @@ const MotionItem = ({ src, alt, delay = 0 }) => {
     <motion.div
       ref={ref}
       className="masonry-item"
-      initial={{ opacity: 0, y: 40 }}
+      initial={{ opacity: 0, y: 20 }}
       animate={controls}
     >
       <img src={src} alt={alt} />

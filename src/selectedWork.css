@@ -44,6 +44,10 @@
 
 /* Media Queries */
 @media (max-width: 768px) {
+.masonry-item {
+  margin-bottom: 1rem;
+}
+
   .selected-work h2 {
     font-size: 2.2rem;
     margin-bottom: 40px;

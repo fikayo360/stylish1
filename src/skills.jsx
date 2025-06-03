@@ -4,18 +4,6 @@ import { useInView } from 'react-intersection-observer';
 import './skills.css'
 const SkillsSection = () => {
 
-    const controls = useAnimation();
-    const [ref, inView] = useInView({ triggerOnce: true });
-    const delay = 0
-      useEffect(() => {
-        if (inView) {
-          controls.start({
-            opacity: 1,
-            y: 0,
-            transition: { duration: 0.6, delay },
-          });
-        }
-      }, [controls, inView, delay]);
 
    return(
         <section className="container skillSection">
@@ -24,7 +12,7 @@ const SkillsSection = () => {
                     <h1>My skills</h1>
                 </div>
 
-                <motion.div className="skill" initial={{ opacity: 0, y: 40 }} animate={controls} ref={ref} >
+                <motion.div className="skill" >
                     <h1>web design </h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum accusantium suscipit a, eius error
                        nostrum rem quis reprehenderit similique mollitia. Voluptatibus blanditiis debitis sapiente commodi vitae?
@@ -32,7 +20,7 @@ const SkillsSection = () => {
                     </p>
                 </motion.div>
 
-                <motion.div className="skill" initial={{ opacity: 0, y: 40 }} animate={controls} ref={ref}>
+                <motion.div className="skill">
                     <h1>ui/ux </h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum accusantium suscipit a, eius error
                        nostrum rem quis reprehenderit similique mollitia. Voluptatibus blanditiis debitis sapiente commodi vitae?
@@ -40,7 +28,7 @@ const SkillsSection = () => {
                     </p>
                 </motion.div>
 
-                <motion.div className="skill" initial={{ opacity: 0, y: 40 }} animate={controls} ref={ref}>
+                <motion.div className="skill">
                     <h1>motion design</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum accusantium suscipit a, eius error
                        nostrum rem quis reprehenderit similique mollitia. Voluptatibus blanditiis debitis sapiente commodi vitae?
@@ -48,7 +36,7 @@ const SkillsSection = () => {
                     </p>
                 </motion.div>
 
-                <motion.div className="skill" initial={{ opacity: 0, y: 40 }} animate={controls} ref={ref}>
+                <motion.div className="skill">
                     <h1>vfx</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum accusantium suscipit a, eius error
                        nostrum rem quis reprehenderit similique mollitia. Voluptatibus blanditiis debitis sapiente commodi vitae?
@@ -56,7 +44,7 @@ const SkillsSection = () => {
                     </p>
                 </motion.div>
 
-                <motion.div className="skill" initial={{ opacity: 0, y: 40 }} animate={controls} ref={ref}>
+                <motion.div className="skill">
                     <h1>branding</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum accusantium suscipit a, eius error
                        nostrum rem quis reprehenderit similique mollitia. Voluptatibus blanditiis debitis sapiente commodi vitae?
@@ -64,7 +52,7 @@ const SkillsSection = () => {
                     </p>
                 </motion.div>
 
-                <motion.div className="skill" initial={{ opacity: 0, y: 40 }} animate={controls} ref={ref}>
+                <motion.div className="skill">
                     <h1>digital art</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum accusantium suscipit a, eius error
                        nostrum rem quis reprehenderit similique mollitia. Voluptatibus blanditiis debitis sapiente commodi vitae?
@@ -72,7 +60,7 @@ const SkillsSection = () => {
                     </p>
                 </motion.div>
 
-                <motion.div className="skill" initial={{ opacity: 0, y: 40 }} animate={controls} ref={ref}>
+                <motion.div className="skill">
                     <h1>3d animations</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum accusantium suscipit a, eius error
                        nostrum rem quis reprehenderit similique mollitia. Voluptatibus blanditiis debitis sapiente commodi vitae?

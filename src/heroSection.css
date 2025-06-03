@@ -171,7 +171,7 @@ nav ul li a:hover {
 
 @media screen and (max-width: 480px) {
   .hero-name {
-    font-size: 18vw;
+    font-size: 20vw;
   }
 
   .hero-description {
